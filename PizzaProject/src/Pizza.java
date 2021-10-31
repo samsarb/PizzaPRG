@@ -24,10 +24,10 @@ public void addIngredientToPizz(Ingredient ingredient) {
 protected int getCost() {
 		int sum = 0;
 		sum+=basePrice;
-		for (Ingredient : ingredients) {
-			
+		for (Ingredient ingredient : ingredients) {
+			sum+=ingredient.getCost();
 		}
-		return 0;
+		return pizzaSize.value*sum;
 }
 
 }
